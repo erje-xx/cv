@@ -1,0 +1,177 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[svgnames, 10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+\setmonofont[Scale=0.8]{Monaco}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% ---- ENVIRONMENTS
+\newenvironment{nstabbing}
+  {\setlength{\topsep}{0pt}%
+   \setlength{\partopsep}{0pt}%
+   \tabbing}
+  {\endtabbing}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+% Here, removed dvi driver options ``dvipdfm"
+\usepackage[bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Eric R. J. Edwards - vita},
+	pdfauthor={erje},
+	pdfproducer={}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Eric R. J. Edwards}\\[1cm]
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft} Institut für Angewandte Physik\\
+Corrensstraße 2-4\\
+\texttt{48149} Münster\\
+%Germany\\[.2cm]
+Germany\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft}
+email: \href{mailto:eedwa_01@uni-muenster.de}{eedwa\_{}01@uni-muenster.de}\\
+\textsc{url}: \href{http://www.uni-muenster.de/Physik.AP/Demokritov/Organisation/Mitglieder/edwards.shtml}{Ins. f. Ang. Phy.}\\ 
+%\vfill
+\begin{nstabbing}
+\textsc{t}\= : \texttt{+49 251 83-33550}\\
+\textsc{f}\> : \texttt{+49 251 83-33513}
+\end{nstabbing}
+\end{flushleft}
+\end{minipage}\\[.2cm]
+Born:  July 25, 1987---Washington D.C., USA\\
+Nationality:  American
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2012}\textbf{\textsc{PhD} in Physics} {\footnotesize (anticipated)}\\
+\emph{Westfälische-Wilhems Universität}, Germany\\
+\textsc{Advisor: Prof. Dr. S. O. Demokritov}\\
+\years{2009}\textbf{\textsc{BSc} in Physics}  {\footnotesize (summa cum laude)}\\
+\emph{Universtiy of Alabama}, U.S.A.
+
+\section*{Academic Work}
+
+\subsection*{Journal articles}
+\noindent
+%
+\years{2012}E. R. J. Edwards, Matthias Buchmeier, V. E. Demidov, and S. O. Demokritov, “Magnetostatic spin-wave modes of a tangentially magnetized disc", \emph{preprint}\\
+%
+\years{2011}V. E. Demidov, S. Urazhdin, E. R. J. Edwards, and S. O. Demokritov, “Wide-range control of ferromagnetic resonance by spin Hall effect", \emph{Appl. Phys. Lett.} \textbf{99}: 172501 (2011)\\ 
+%
+\years{2011}V. E. Demidov, S. Urazhdin, E. R. J. Edwards, M. D. Stiles, R. D. McMichael, and S. O. Demokritov, “Control of Magnetic Fluctuations by Spin Current", \emph{Phys. Rev. Lett.} \textbf{107}: 107204 (2011)\\ 
+%
+\years{2010}T. Mewes, R.L. Stamps, H. Lee, E. Edwards, M. Bradford, C.K.A. Mewes, Z. Tadisina, S. Gupta, “Unidirectional magnetization relaxation in exchange-biased films", \emph{IEEE Magnetics Letters} \textbf{1}: 5550119 (2010)
+
+\subsection*{Talks}
+\noindent
+\years{2011}Deutsche Physikalische Gesellschaft Frühjahrstagung, ``Spin-wave spectrum of a YIG disc"\\
+\years{2008}American Physical Society March Meeting, ``Non-local damping effects in Py-Cu-FeMn trilayers"
+
+\subsection*{Other Work}
+\noindent
+\years{2009}Karyn Kupcinet Summer School for International Students\\
+\emph{Weizmann Institute of Science}. Rehovot, Israel.\\
+\textsc{Advisor: Prof. Moty Heiblum}\\
+%Report: ``Superconducting contacts to a two-dimensional electron gas in AlGaAs/GaAs heterostructures"\\
+Report: ``Superconducting contacts to a 2D electron gas in AlGaAs/GaAs heterostructures"\\
+%
+\years{2008}National Science Foundation R.E.U.\\ 
+\emph{Cornell Laboratory for Elementary Particle Physics}. Ithaca, New York.\\
+\textsc{Advisor: Prof. Georg Hoffstaetter}\\
+Report: ``Time of Flight Identification of Ions in CESR and ERL Beam Pipes"\\
+%
+\years{2007}National Science Foundation R.E.U.\\
+\emph{Columbia University Department of Applied Physics}. New York City, New York.\\
+\textsc{Advisor: Prof. William Bailey}\\
+Report: ``Low relaxation rates in doped ultrathin iron films"
+
+\section*{Grants, honors \& awards}
+\noindent
+\years{2008}Barry M. Goldwater Scholarship\\
+%\years{2008}Outstanding Senior Physics Student\\
+\years{2005}E. Scott Barr Scholarship in Physics
+
+\section*{Languages}
+\emph{English} (native speaker)\\
+\emph{German} (professional proficiency)
+
+\section*{References}
+\noindent
+Prof. Dr. Sergej Demokritov\\
+Institut für Angewandte Physik\\
+Correnstraße 2-4\\
+\texttt{48149} Münster\\
+Germany\\
+\href{mailto:demokrit@uni-muenster.de}{demokrit@uni-muenster.de}
+\begin{nstabbing}
+\textsc{t}\= : \texttt{+49 251 83-33551}\\
+\textsc{f}\> : \texttt{+49 251 83-33513}\\[.2cm]
+\end{nstabbing}
+\noindent
+Dr. Tim Mewes\\
+University of Alabama\\
+Department of Physics \& Astronomy\\
+Box 870209\\
+Tuscaloosa, AL \texttt{35487}\\
+U.S.A.\\
+\href{mailto:tmewes@ua.edu}{tmewes@ua.edu}
+\begin{nstabbing}
+\textsc{t}\= : \texttt{+1 205-348-9187}\\
+\textsc{f}\> : \texttt{+1 205-348-2346}
+\end{nstabbing}
+
+%\vspace{1cm}
+%\vfill{}
+%\hrulefill
+
+%\begin{center}
+%{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+%Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+%\end{center}
+
+\end{document}
